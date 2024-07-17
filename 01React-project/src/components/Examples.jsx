@@ -35,7 +35,7 @@ export default function Examples(){
         {/* the children of the Section component are everything between the
          opening <Section> and closing </Section> tags.  */}
         {/*This "button"s is a props which is passed through <Tabs> components */}
-        <Tabs ButtonContainer = "menu"
+        <Tabs
          buttons={
           <>
           <TabButton isSelected={selectedTopic === "components"}
@@ -59,3 +59,7 @@ export default function Examples(){
       </Section>
     )
 }
+
+/* ButtonContainer is a identifier as value for a prop to dynamically
+  render different HTML elements and custom components (for bulit-in element "menu")
+  for custom component ({only name of component/"Section"})*/
